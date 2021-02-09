@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.STAKING_REWARDS_INTERFACE = exports.STAKING_REWARDS_FACTORY_INTERFACE = void 0;
+const abi_1 = require("@ethersproject/abi");
+const StakingRewards_json_1 = require("@uniswap/liquidity-staker/build/StakingRewards.json");
+const StakingRewardsFactory_json_1 = require("@uniswap/liquidity-staker/build/StakingRewardsFactory.json");
+const STAKING_REWARDS_INTERFACE = new abi_1.Interface(StakingRewards_json_1.abi);
+exports.STAKING_REWARDS_INTERFACE = STAKING_REWARDS_INTERFACE;
+const STAKING_REWARDS_FACTORY_INTERFACE = new abi_1.Interface(StakingRewardsFactory_json_1.abi);
+exports.STAKING_REWARDS_FACTORY_INTERFACE = STAKING_REWARDS_FACTORY_INTERFACE;

@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.toggleURLWarning = exports.removeSerializedPair = exports.addSerializedPair = exports.removeSerializedToken = exports.addSerializedToken = exports.updateUserDeadline = exports.updateUserSlippageTolerance = exports.updateUserSingleHopOnly = exports.updateUserExpertMode = exports.updateUserDarkMode = exports.updateMatchesDarkMode = void 0;
+const toolkit_1 = require("@reduxjs/toolkit");
+exports.updateMatchesDarkMode = toolkit_1.createAction('user/updateMatchesDarkMode');
+exports.updateUserDarkMode = toolkit_1.createAction('user/updateUserDarkMode');
+exports.updateUserExpertMode = toolkit_1.createAction('user/updateUserExpertMode');
+exports.updateUserSingleHopOnly = toolkit_1.createAction('user/updateUserSingleHopOnly');
+exports.updateUserSlippageTolerance = toolkit_1.createAction('user/updateUserSlippageTolerance');
+exports.updateUserDeadline = toolkit_1.createAction('user/updateUserDeadline');
+exports.addSerializedToken = toolkit_1.createAction('user/addSerializedToken');
+exports.removeSerializedToken = toolkit_1.createAction('user/removeSerializedToken');
+exports.addSerializedPair = toolkit_1.createAction('user/addSerializedPair');
+exports.removeSerializedPair = toolkit_1.createAction('user/removeSerializedPair');
+exports.toggleURLWarning = toolkit_1.createAction('app/toggleURLWarning');
